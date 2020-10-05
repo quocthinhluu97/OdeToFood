@@ -31,7 +31,17 @@
                     Detail
                     <i class="fas fa-search" />
                 </a>
+                <a class="btn btn-primary"
+                   asp-page="./Edit" 
+                   asp-route-restaurantId="@restaurant.Id">
+                    Edit
+                    <i class="fas fa-search" />
+                </a>
             </td>
         </tr>
     }
 </table>
+
+<a asp-page="./Edit" class="btn btn-primary">Add new</a>
+
+<div>@Model.Message</div>
